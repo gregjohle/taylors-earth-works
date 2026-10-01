@@ -50,6 +50,9 @@ function initBeforeAfterSlider() {
 
   let isDragging = false;
 
+  const afterBadge = container.querySelector('.ba-badge-after');
+  const beforeBadge = container.querySelector('.ba-badge-before');
+
   function updateSliderPosition(clientX) {
     const rect = container.getBoundingClientRect();
     let offsetX = clientX - rect.left;
@@ -61,6 +64,14 @@ function initBeforeAfterSlider() {
 
     beforeDiv.style.width = `${percentage}%`;
     handle.style.left = `${percentage}%`;
+
+    // Smoothly fade out badges as handle approaches
+    if (afterBadge) {
+      afterBadge.style.opacity = percentage >= 90 ? Math.max(0, (100 - percentage) / 10) : '1';
+    }
+    if (beforeBadge) {
+      beforeBadge.style.opacity = percentage <= 10 ? Math.max(0, percentage / 10) : '1';
+    }
   }
 
   // Ensure the clipped image matches the exact width & height of the container
