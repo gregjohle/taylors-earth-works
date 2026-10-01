@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#242320"/>
+      <stop offset="100%" stop-color="#141312"/>
+    </linearGradient>
+    <linearGradient id="goldGrad1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#dfc418"/>
+      <stop offset="50%" stop-color="#f2d82b"/>
+      <stop offset="100%" stop-color="#dfc418"/>
+    </linearGradient>
+    <linearGradient id="metalGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a4947"/>
+      <stop offset="100%" stop-color="#2a2927"/>
+    </linearGradient>
+    <filter id="shadow1" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="800" height="620" rx="16" fill="url(#bgGrad1)"/>
+  <rect x="12" y="12" width="776" height="596" rx="10" fill="none" stroke="#3d3c39" stroke-width="2"/>
+  <rect x="18" y="18" width="764" height="584" rx="8" fill="none" stroke="#f2d82b" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- Top Location Badge -->
+  <g transform="translate(400, 48)" text-anchor="middle">
+    <rect x="-140" y="-16" width="280" height="30" rx="15" fill="#2d2c29" stroke="#f2d82b" stroke-width="1.5"/>
+    <text y="4" fill="#f2d82b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="2.5">
+      ZEBULON, NC • OWNER-OPERATED
+    </text>
+  </g>
+
+  <!-- Main Headline Typography -->
+  <g transform="translate(400, 115)" text-anchor="middle">
+    <text y="0" fill="#f2d82b" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="46" font-weight="900" letter-spacing="4" filter="url(#shadow1)">
+      TAYLOR'S
+    </text>
+    <text y="42" fill="#ffffff" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="40" font-weight="900" letter-spacing="5" filter="url(#shadow1)">
+      EARTH WORKS
+    </text>
+  </g>
+
+  <!-- Central Artwork: Track Skid Steer on Graded Slope -->
+  <g transform="translate(130, 185)">
+    <!-- Hill Slope being graded (Dirt strata) -->
+    <path d="M380,180 L520,90 L540,90 L540,195 L380,195 Z" fill="#353431"/>
+    <path d="M420,180 L520,115 L540,115 L540,195 L420,195 Z" fill="#262523"/>
+    <!-- Grade cut lines -->
+    <line x1="380" y1="180" x2="520" y2="90" stroke="#f2d82b" stroke-width="3" stroke-dasharray="8 4"/>
+
+    <!-- Laser Level Transmitter on Tripod (left side) -->
+    <g transform="translate(40, 95)">
+      <!-- Tripod legs -->
+      <line x1="20" y1="40" x2="0" y2="100" stroke="#7a7976" stroke-width="2.5"/>
+      <line x1="20" y1="40" x2="20" y2="100" stroke="#7a7976" stroke-width="2.5"/>
+      <line x1="20" y1="40" x2="40" y2="100" stroke="#7a7976" stroke-width="2.5"/>
+      <!-- Laser unit -->
+      <rect x="12" y="24" width="16" height="16" rx="2" fill="#f2d82b" stroke="#191817" stroke-width="1.5"/>
+      <rect x="15" y="16" width="10" height="8" rx="2" fill="#ef4444"/>
+      <!-- Laser Beam -->
+      <line x1="25" y1="20" x2="480" y2="20" stroke="#ef4444" stroke-width="1" stroke-dasharray="6 3" stroke-opacity="0.8"/>
+    </g>
+
+    <!-- Skid Steer Main Body -->
+    <g transform="translate(140, 40)">
+      <!-- Chassis / Engine bay -->
+      <path d="M40,110 L50,60 L140,55 L160,85 L180,110 Z" fill="#262523" stroke="#141312" stroke-width="2"/>
+      
+      <!-- ROPS Cab & Cage -->
+      <path d="M80,60 L100,10 L155,10 L160,60 Z" fill="#181816" stroke="#f2d82b" stroke-width="3"/>
+      <!-- Cab window grate -->
+      <line x1="105" y1="22" x2="150" y2="22" stroke="#545350" stroke-width="1.5"/>
+      <line x1="110" y1="36" x2="152" y2="36" stroke="#545350" stroke-width="1.5"/>
+      <line x1="115" y1="48" x2="155" y2="48" stroke="#545350" stroke-width="1.5"/>
+
+      <!-- Boom Lift Arms (Heavy Equipment Yellow) -->
+      <path d="M50,75 L120,45 L200,95 L240,115 L225,125 L185,105 L120,65 L55,85 Z" fill="url(#goldGrad1)" stroke="#191817" stroke-width="2"/>
+      <circle cx="53" cy="80" r="5" fill="#262523" stroke="#f2d82b" stroke-width="1.5"/>
+      <circle cx="232" cy="120" r="4.5" fill="#262523" stroke="#f2d82b" stroke-width="1.5"/>
+
+      <!-- Hydraulic Cylinder -->
+      <line x1="85" y1="85" x2="155" y2="70" stroke="#9c9b98" stroke-width="5" stroke-linecap="round"/>
+      <line x1="85" y1="85" x2="125" y2="76" stroke="#191817" stroke-width="7" stroke-linecap="round"/>
+
+      <!-- Dirt Bucket (Angled cutting into grade) -->
+      <path d="M225,115 L285,100 L275,155 L215,145 Z" fill="#2d2c29" stroke="#f2d82b" stroke-width="2"/>
+      <!-- Bucket cutting teeth -->
+      <polygon points="275,155 285,150 282,156" fill="#f2d82b"/>
+      <polygon points="265,153 275,148 272,154" fill="#f2d82b"/>
+      <polygon points="255,151 265,146 262,152" fill="#f2d82b"/>
+
+      <!-- Triangular Track Undercarriage -->
+      <g transform="translate(45, 110)">
+        <!-- Rubber/Steel Track Outline -->
+        <path d="M25,35 L145,35 Q165,35 155,15 L140,-5 Q130,-15 110,-10 L45,-10 Q25,-15 15,-5 L5,15 Q-5,35 25,35 Z" fill="#141312" stroke="#4a4946" stroke-width="2.5"/>
+        <!-- Tread cleats -->
+        <path d="M20,35 L20,38 M40,35 L40,38 M60,35 L60,38 M80,35 L80,38 M100,35 L100,38 M120,35 L120,38 M140,35 L140,38" stroke="#f2d82b" stroke-width="2"/>
+        <!-- Drive Sprocket & Bogie Wheels -->
+        <circle cx="20" cy="15" r="14" fill="#353431" stroke="#f2d82b" stroke-width="1.5"/>
+        <circle cx="140" cy="15" r="14" fill="#353431" stroke="#f2d82b" stroke-width="1.5"/>
+        <circle cx="60" cy="20" r="9" fill="#242321" stroke="#7a7976" stroke-width="1.5"/>
+        <circle cx="85" cy="20" r="9" fill="#242321" stroke="#7a7976" stroke-width="1.5"/>
+        <circle cx="110" cy="20" r="9" fill="#242321" stroke="#7a7976" stroke-width="1.5"/>
+      </g>
+    </g>
+
+    <!-- Fresh Compacted Grade Line -->
+    <line x1="0" y1="185" x2="540" y2="185" stroke="#f2d82b" stroke-width="3"/>
+  </g>
+
+  <!-- DEDICATED SCRIPTURE BANNER (Concept 1, Prompt 1) -->
+  <g transform="translate(400, 435)" text-anchor="middle">
+    <!-- Steel Plinth Banner -->
+    <rect x="-260" y="0" width="520" height="52" rx="8" fill="url(#metalGrad1)" stroke="#f2d82b" stroke-width="2" filter="url(#shadow1)"/>
+    <!-- Left & Right Gold Rivets -->
+    <circle cx="-240" cy="26" r="4" fill="#f2d82b"/>
+    <circle cx="240" cy="26" r="4" fill="#f2d82b"/>
+    
+    <!-- Decorative Diamond Accent & Scripture Text -->
+    <g transform="translate(0, 32)">
+      <polygon points="-190,-6 -184,0 -190,6 -196,0" fill="#f2d82b"/>
+      <text x="0" y="0" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" letter-spacing="3">
+        John 14:6  <tspan fill="#f2d82b">•</tspan>  John 3:16
+      </text>
+      <polygon points="190,-6 196,0 190,6 184,0" fill="#f2d82b"/>
+    </g>
+  </g>
+
+  <!-- Services Strip -->
+  <g transform="translate(400, 530)" text-anchor="middle">
+    <text y="0" fill="#f2d82b" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="900" letter-spacing="3">
+      CLEARING  •  GRADING  •  EXCAVATING  •  FOOTINGS
+    </text>
+    <text y="28" fill="#9c9b98" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="700" letter-spacing="2">
+      CELL: <tspan fill="#ffffff">(984) 318-5575</tspan>  |  FREE ESTIMATES
+    </text>
+  </g>
+</svg>

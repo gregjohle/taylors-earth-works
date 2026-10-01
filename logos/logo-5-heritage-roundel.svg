@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="roundelBg5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#242321"/>
+      <stop offset="100%" stop-color="#121211"/>
+    </linearGradient>
+    <linearGradient id="goldGrad5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dfc418"/>
+      <stop offset="40%" stop-color="#f5e158"/>
+      <stop offset="70%" stop-color="#f2d82b"/>
+      <stop offset="100%" stop-color="#bfa408"/>
+    </linearGradient>
+    <linearGradient id="innerSky5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#383734"/>
+      <stop offset="100%" stop-color="#1e1d1b"/>
+    </linearGradient>
+    <filter id="shadow5" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Circular Paths for TextAlongPath -->
+    <!-- R = 280 px for Outer Top Text -->
+    <path id="topArcPath" d="M 85,375 A 290,290 0 1,1 665,375" fill="none"/>
+    <!-- R = 290 px for Outer Bottom Text (inward facing) -->
+    <path id="bottomArcPath" d="M 665,375 A 290,290 0 0,1 85,375" fill="none"/>
+  </defs>
+
+  <!-- Deep Outer Canvas -->
+  <rect width="750" height="750" rx="20" fill="#111010"/>
+
+  <!-- MAIN ROUNDEL EMBLEM -->
+  <g transform="translate(375, 375)" text-anchor="middle" filter="url(#shadow5)">
+    
+    <!-- Outer Heavy Ring Base -->
+    <circle cx="0" cy="0" r="340" fill="url(#roundelBg5)" stroke="url(#goldGrad5)" stroke-width="8"/>
+    
+    <!-- Outer Ring Tread Notches (36 gear/tread notches around outer perimeter) -->
+    <circle cx="0" cy="0" r="332" fill="none" stroke="#3a3936" stroke-width="3"/>
+    <circle cx="0" cy="0" r="248" fill="none" stroke="url(#goldGrad5)" stroke-width="4"/>
+
+    <!-- INNER CENTER CIRCLE -->
+    <circle cx="0" cy="0" r="240" fill="url(#innerSky5)"/>
+
+    <!-- CENTER ARTWORK: Graded Land, Pine Horizon & Skid Steer -->
+    <g transform="translate(0, -20)">
+      <!-- North Carolina Pine Treeline Horizon -->
+      <path d="M-190,65 L-175,25 L-160,65 L-145,15 L-130,65 L-115,35 L-100,65 L-85,20 L-70,65 M70,65 L85,20 L100,65 L115,30 L130,65 L145,15 L160,65 L175,25 L190,65" stroke="#2a2926" stroke-width="14" stroke-linecap="round" fill="none"/>
+      
+      <!-- Sun Rays Rising Behind Treeline -->
+      <line x1="0" y1="40" x2="0" y2="-30" stroke="#f2d82b" stroke-width="2" stroke-dasharray="6 6" stroke-opacity="0.5"/>
+      <line x1="-30" y1="45" x2="-80" y2="-15" stroke="#f2d82b" stroke-width="2" stroke-dasharray="6 6" stroke-opacity="0.5"/>
+      <line x1="30" y1="45" x2="80" y2="-15" stroke="#f2d82b" stroke-width="2" stroke-dasharray="6 6" stroke-opacity="0.5"/>
+
+      <!-- Fresh Laser-Graded Ground Plane -->
+      <path d="M-230,70 L230,70 L230,160 L-230,160 Z" fill="#181816"/>
+      <line x1="-235" y1="70" x2="235" y2="70" stroke="url(#goldGrad5)" stroke-width="4"/>
+
+      <!-- Illustrated Compact Track Skid Steer Loader in Center -->
+      <g transform="translate(-75, -20)">
+        <!-- Cab & Frame -->
+        <path d="M35,65 L50,15 L105,15 L110,65 Z" fill="#141312" stroke="#f2d82b" stroke-width="2.5"/>
+        <line x1="60" y1="30" x2="100" y2="30" stroke="#545350" stroke-width="1.5"/>
+        <line x1="65" y1="45" x2="103" y2="45" stroke="#545350" stroke-width="1.5"/>
+        <!-- Boom Arm (Yellow) -->
+        <path d="M15,50 L75,25 L135,55 L125,65 L75,38 L25,60 Z" fill="url(#goldGrad5)" stroke="#141312" stroke-width="1.5"/>
+        <!-- Dirt Bucket -->
+        <path d="M130,50 L165,42 L158,80 L120,74 Z" fill="#2d2c29" stroke="#f2d82b" stroke-width="2"/>
+        <polygon points="158,80 166,76 163,82" fill="#f2d82b"/>
+        <polygon points="148,78 156,74 153,80" fill="#f2d82b"/>
+        <!-- Track Base -->
+        <path d="M20,85 L115,85 Q125,85 120,72 L110,60 Q105,55 90,56 L45,56 Q30,55 25,60 L15,72 Q10,85 20,85 Z" fill="#141312" stroke="#4a4946" stroke-width="2"/>
+        <circle cx="28" cy="72" r="8" fill="#353431" stroke="#f2d82b" stroke-width="1.5"/>
+        <circle cx="108" cy="72" r="8" fill="#353431" stroke="#f2d82b" stroke-width="1.5"/>
+        <circle cx="55" cy="76" r="6" fill="#242321" stroke="#7a7976" stroke-width="1"/>
+        <circle cx="80" cy="76" r="6" fill="#242321" stroke="#7a7976" stroke-width="1"/>
+      </g>
+    </g>
+
+    <!-- INNER SCRIPTURE RIBBON BANNER (Concept 5, Prompt 1) -->
+    <g transform="translate(0, 115)">
+      <!-- Curved/Beveled Dark Steel Ribbon -->
+      <path d="M-190,0 L190,0 L205,42 L180,48 L-180,48 L-205,42 Z" fill="#181816" stroke="url(#goldGrad5)" stroke-width="2" filter="url(#shadow5)"/>
+      <circle cx="-175" cy="24" r="3.5" fill="#f2d82b"/>
+      <circle cx="175" cy="24" r="3.5" fill="#f2d82b"/>
+
+      <!-- Scripture Text Centered on Banner -->
+      <text y="32" fill="#ffffff" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="22" font-weight="900" letter-spacing="3">
+        John 14:6  <tspan fill="#f2d82b">•</tspan>  John 3:16
+      </text>
+    </g>
+
+    <!-- Center Foundation Tag -->
+    <g transform="translate(0, 185)">
+      <text y="0" fill="#f2d82b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="900" letter-spacing="3">
+        CLEARING • GRADING • FOOTINGS
+      </text>
+      <text y="22" fill="#9c9b98" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" letter-spacing="2">
+        (984) 318-5575
+      </text>
+    </g>
+
+    <!-- Circular Decorative Dividing Stars -->
+    <g transform="translate(-290, 0)">
+      <polygon points="0,-10 3,-3 10,-3 5,2 7,9 0,5 -7,9 -5,2 -10,-3 -3,-3" fill="#f2d82b"/>
+    </g>
+    <g transform="translate(290, 0)">
+      <polygon points="0,-10 3,-3 10,-3 5,2 7,9 0,5 -7,9 -5,2 -10,-3 -3,-3" fill="#f2d82b"/>
+    </g>
+  </g>
+
+  <!-- ARCUATE TEXT ON OUTER RING (Top & Bottom Arcs) -->
+  <g fill="url(#goldGrad5)" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="34" font-weight="900" letter-spacing="5">
+    <text>
+      <textPath href="#topArcPath" startOffset="50%" text-anchor="middle">
+        TAYLOR'S EARTH WORKS
+      </textPath>
+    </text>
+  </g>
+
+  <g fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" letter-spacing="4">
+    <text>
+      <textPath href="#bottomArcPath" startOffset="50%" text-anchor="middle">
+        ZEBULON, NORTH CAROLINA
+      </textPath>
+    </text>
+  </g>
+</svg>

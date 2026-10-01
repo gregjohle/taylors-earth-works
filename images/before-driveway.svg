@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 506" width="900" height="506">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <linearGradient id="mudGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5a4231"/>
+      <stop offset="50%" stop-color="#3e2d21"/>
+      <stop offset="100%" stop-color="#2d1f16"/>
+    </linearGradient>
+  </defs>
+  <!-- Background / Sky -->
+  <rect width="900" height="506" fill="url(#skyGrad)"/>
+  
+  <!-- Overgrown Treeline / Background -->
+  <path d="M0,260 Q120,230 250,260 T500,240 T750,260 T900,230 L900,506 L0,506 Z" fill="#2d3748" opacity="0.3"/>
+  <path d="M0,280 Q160,250 320,280 T640,260 T900,280 L900,506 L0,506 Z" fill="#3f4a3c" opacity="0.5"/>
+  
+  <!-- Rough Uneven Ground -->
+  <path d="M0,320 Q200,300 450,330 T900,310 L900,506 L0,506 Z" fill="url(#mudGrad)"/>
+  
+  <!-- Mud Ruts, Potholes & Puddles -->
+  <!-- Deep Rut Left -->
+  <path d="M120,380 Q250,370 420,400 T800,430 L820,450 Q500,430 200,410 Z" fill="#1e150f" opacity="0.8"/>
+  <!-- Puddle 1 -->
+  <ellipse cx="280" cy="420" rx="90" ry="24" fill="#3b4239" stroke="#525d4e" stroke-width="3"/>
+  <ellipse cx="280" cy="420" rx="80" ry="18" fill="#4a5547" opacity="0.9"/>
+  <!-- Puddle 2 -->
+  <ellipse cx="620" cy="445" rx="110" ry="28" fill="#333b31" stroke="#485344" stroke-width="3"/>
+  <!-- Rough Rocks & Weeds -->
+  <circle cx="180" cy="360" r="14" fill="#64748b"/>
+  <circle cx="210" cy="370" r="8" fill="#475569"/>
+  <circle cx="480" cy="380" r="18" fill="#64748b"/>
+  <circle cx="510" cy="390" r="10" fill="#475569"/>
+  <circle cx="750" cy="380" r="22" fill="#475569"/>
+  
+  <!-- Overgrown Weeds -->
+  <path d="M100,340 L110,300 L118,340 M112,340 L125,295 L130,340 M140,345 L150,310 L158,345" stroke="#4d5b38" stroke-width="4" stroke-linecap="round"/>
+  <path d="M400,350 L410,315 L418,350 M415,350 L425,305 L432,350" stroke="#4d5b38" stroke-width="4" stroke-linecap="round"/>
+  <path d="M700,350 L712,310 L720,350 M722,350 L735,300 L742,350" stroke="#4d5b38" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Water reflection effect -->
+  <ellipse cx="270" cy="418" rx="40" ry="6" fill="#818cf8" opacity="0.25"/>
+  <ellipse cx="610" cy="442" rx="55" ry="7" fill="#818cf8" opacity="0.25"/>
+
+  <!-- Watermark / Label text in image for preview -->
+  <rect x="30" y="30" width="220" height="44" rx="6" fill="rgba(15,23,42,0.85)"/>
+  <text x="45" y="58" fill="#f87171" font-family="system-ui, sans-serif" font-size="18" font-weight="900" letter-spacing="1">BEFORE: UNPREPPED</text>
+  <text x="30" y="485" fill="#f1f5f9" font-family="system-ui, sans-serif" font-size="14" font-weight="600" opacity="0.8">Ruts, Potholes, Standing Water &amp; Uneven Subgrade</text>
+</svg>

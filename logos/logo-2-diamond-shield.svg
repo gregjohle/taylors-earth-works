@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldBg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c2b28"/>
+      <stop offset="100%" stop-color="#141312"/>
+    </linearGradient>
+    <linearGradient id="goldGrad2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#dfc418"/>
+      <stop offset="40%" stop-color="#f5e158"/>
+      <stop offset="70%" stop-color="#f2d82b"/>
+      <stop offset="100%" stop-color="#bfa408"/>
+    </linearGradient>
+    <linearGradient id="steelBevel2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7a7976"/>
+      <stop offset="50%" stop-color="#4a4946"/>
+      <stop offset="100%" stop-color="#242321"/>
+    </linearGradient>
+
+    <!-- Diamond Plate Tread Pattern -->
+    <pattern id="diamondPlatePattern" width="30" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <!-- First Diamond -->
+      <path d="M5,10 Q8,4 11,10 Q14,16 11,10 Q8,4 5,10 Z" fill="#444340" stroke="#5a5955" stroke-width="0.8"/>
+      <ellipse cx="8" cy="10" rx="6" ry="2.2" fill="#757470" transform="rotate(-30 8 10)"/>
+      <!-- Offset Diamond -->
+      <ellipse cx="23" cy="25" rx="6" ry="2.2" fill="#757470" transform="rotate(-30 23 25)"/>
+      <ellipse cx="23" cy="10" rx="6" ry="2.2" fill="#2b2a28" transform="rotate(60 23 10)"/>
+      <ellipse cx="8" cy="25" rx="6" ry="2.2" fill="#2b2a28" transform="rotate(60 8 25)"/>
+    </pattern>
+
+    <filter id="shieldShadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Background Canvas -->
+  <rect width="800" height="700" rx="16" fill="#151413"/>
+
+  <!-- SHIELD EMBLEM GROUP -->
+  <g transform="translate(400, 20)" text-anchor="middle">
+    
+    <!-- Outer 5-Sided Shield Path with Diamond Plate -->
+    <!-- Points: Top-Left(-280, 20), Top-Right(280, 20), Mid-Right(280, 360), Bottom-Point(0, 560), Mid-Left(-280, 360) -->
+    <path d="M-290,20 L290,20 L290,360 L0,570 L-290,360 Z" fill="#232220" stroke="#f2d82b" stroke-width="4" filter="url(#shieldShadow2)"/>
+    
+    <!-- Diamond Plate Inset Border -->
+    <path d="M-275,32 L275,32 L275,350 L0,550 L-275,350 Z" fill="url(#diamondPlatePattern)"/>
+    
+    <!-- Inner Dark Core Shield -->
+    <path d="M-245,45 L245,45 L245,340 L0,520 L-245,340 Z" fill="url(#shieldBg2)" stroke="#f2d82b" stroke-width="2"/>
+
+    <!-- Decorative Corner Bolts on Shield -->
+    <circle cx="-260" cy="50" r="6" fill="#141312" stroke="#f2d82b" stroke-width="2"/>
+    <circle cx="260" cy="50" r="6" fill="#141312" stroke="#f2d82b" stroke-width="2"/>
+    <circle cx="-260" cy="335" r="6" fill="#141312" stroke="#f2d82b" stroke-width="2"/>
+    <circle cx="260" cy="335" r="6" fill="#141312" stroke="#f2d82b" stroke-width="2"/>
+
+    <!-- Subtitle Arch Top Tag -->
+    <rect x="-130" y="60" width="260" height="28" rx="6" fill="#141312" stroke="#f2d82b" stroke-width="1.5"/>
+    <text y="79" fill="#f2d82b" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" letter-spacing="3">
+      ZEBULON, NC • EST. 2026
+    </text>
+
+    <!-- COMPANY NAME (Upper Shield Section) -->
+    <g transform="translate(0, 140)">
+      <text y="0" fill="url(#goldGrad2)" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="52" font-weight="900" letter-spacing="4" filter="url(#shieldShadow2)">
+        TAYLOR'S
+      </text>
+      <text y="48" fill="#ffffff" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="44" font-weight="900" letter-spacing="5" filter="url(#shieldShadow2)">
+        EARTH WORKS
+      </text>
+    </g>
+
+    <!-- Heavy Dividing Gold Bar with Machine Teeth Accent -->
+    <g transform="translate(0, 225)">
+      <rect x="-225" y="0" width="450" height="8" rx="2" fill="url(#goldGrad2)"/>
+      <polygon points="-15,0 0,15 15,0" fill="url(#goldGrad2)"/>
+    </g>
+
+    <!-- Services Banner Inside Upper Center -->
+    <g transform="translate(0, 260)">
+      <text y="0" fill="#f2d82b" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" letter-spacing="2">
+        CLEARING  /  GRADING  /  EXCAVATING  /  FOOTINGS
+      </text>
+    </g>
+
+    <!-- DEDICATED LOWER ENGRAVED STEEL SCRIPTURE PLATE (Concept 2, Prompt 1) -->
+    <g transform="translate(0, 310)">
+      <!-- Recessed Steel Plate -->
+      <rect x="-210" y="0" width="420" height="74" rx="8" fill="#181816" stroke="#4a4946" stroke-width="2"/>
+      <rect x="-202" y="6" width="404" height="62" rx="5" fill="none" stroke="#f2d82b" stroke-width="1.5"/>
+
+      <!-- Scripture Text -->
+      <text y="42" fill="#ffffff" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="28" font-weight="900" letter-spacing="3">
+        John 14:6  <tspan fill="#f2d82b">•</tspan>  John 3:16
+      </text>
+    </g>
+
+    <!-- Direct Cell Phone & Owner Inset -->
+    <g transform="translate(0, 422)">
+      <text y="0" fill="#f2d82b" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" letter-spacing="2">
+        CELL: (984) 318-5575
+      </text>
+      <text y="24" fill="#a3a29f" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+        TAYLOR McDANIEL  |  OWNER &amp; OPERATOR
+      </text>
+    </g>
+
+    <!-- Heavy Excavator Bucket Teeth Anchoring the Bottom Shield Point -->
+    <g transform="translate(0, 565)">
+      <!-- Center Tooth -->
+      <polygon points="-16,-5 16,-5 10,40 -10,40" fill="url(#goldGrad2)" stroke="#191817" stroke-width="2"/>
+      <!-- Left Tooth -->
+      <polygon points="-52,-18 -24,-14 -32,26 -52,22" fill="url(#goldGrad2)" stroke="#191817" stroke-width="2"/>
+      <!-- Right Tooth -->
+      <polygon points="24,-14 52,-18 52,22 32,26" fill="url(#goldGrad2)" stroke="#191817" stroke-width="2"/>
+    </g>
+  </g>
+
+  <!-- Bottom Catchphrase -->
+  <text x="400" y="675" text-anchor="middle" fill="#757470" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="4">
+    HONEST WORK  •  PRECISION ELEVATION  •  FREE ESTIMATES
+  </text>
+</svg>

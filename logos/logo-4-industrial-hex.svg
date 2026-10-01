@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 680" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hexBg4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2927"/>
+      <stop offset="100%" stop-color="#141312"/>
+    </linearGradient>
+    <linearGradient id="goldGrad4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5e158"/>
+      <stop offset="40%" stop-color="#f2d82b"/>
+      <stop offset="100%" stop-color="#bfa408"/>
+    </linearGradient>
+    <linearGradient id="steelHex4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5a5956"/>
+      <stop offset="50%" stop-color="#3a3937"/>
+      <stop offset="100%" stop-color="#1c1b1a"/>
+    </linearGradient>
+    <filter id="shadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base Canvas -->
+  <rect width="800" height="680" rx="16" fill="#141312"/>
+
+  <!-- HEXAGON MACHINE DECAL (Concept 4, Prompt 1) -->
+  <g transform="translate(400, 320)" text-anchor="middle">
+    
+    <!-- Outer Heavy Hexagon Bolt Frame (Points at 0, 60, 120, 180, 240, 300 deg) -->
+    <!-- R = 290 px -->
+    <polygon points="0,-290 251,-145 251,145 0,290 -251,145 -251,-145" fill="url(#hexBg4)" stroke="url(#goldGrad4)" stroke-width="12" filter="url(#shadow4)"/>
+    
+    <!-- Inner Inset Hexagon -->
+    <!-- R = 265 px -->
+    <polygon points="0,-265 229,-132 229,132 0,265 -229,132 -229,-132" fill="#1c1b1a" stroke="#4a4946" stroke-width="2"/>
+
+    <!-- Six Machine Bolt Head Accents around the Vertices -->
+    <circle cx="0" cy="-275" r="5" fill="#f2d82b"/>
+    <circle cx="238" cy="-138" r="5" fill="#f2d82b"/>
+    <circle cx="238" cy="138" r="5" fill="#f2d82b"/>
+    <circle cx="0" cy="275" r="5" fill="#f2d82b"/>
+    <circle cx="-238" cy="138" r="5" fill="#f2d82b"/>
+    <circle cx="-238" cy="-138" r="5" fill="#f2d82b"/>
+
+    <!-- TOP HALF: EQUIPMENT SILHOUETTES (Skid Steer & Tandem Dump Truck) -->
+    <g transform="translate(0, -115)">
+      <!-- Ground cut line -->
+      <line x1="-190" y1="55" x2="190" y2="55" stroke="#f2d82b" stroke-width="2"/>
+
+      <!-- Tandem Dump Truck Silhouette (Right Side) -->
+      <g transform="translate(10, -35)">
+        <!-- Raised Dump Bed -->
+        <path d="M40,55 L135,15 L145,35 L50,75 Z" fill="#2d2c29" stroke="#f2d82b" stroke-width="2"/>
+        <!-- Dumping Stone / Aggregate Pile -->
+        <path d="M125,50 L145,75 L110,75 Z" fill="#7a7976"/>
+        <!-- Cab -->
+        <path d="M-10,75 L-10,40 L20,40 L35,55 L35,75 Z" fill="#f2d82b" stroke="#141312" stroke-width="1.5"/>
+        <rect x="0" y="44" width="18" height="14" fill="#141312"/>
+        <!-- Truck Wheels (Tandem Duals) -->
+        <circle cx="5" cy="78" r="11" fill="#141312" stroke="#f2d82b" stroke-width="1.5"/>
+        <circle cx="75" cy="78" r="11" fill="#141312" stroke="#f2d82b" stroke-width="1.5"/>
+        <circle cx="102" cy="78" r="11" fill="#141312" stroke="#f2d82b" stroke-width="1.5"/>
+      </g>
+
+      <!-- Skid Steer Loader Silhouette (Left Side) -->
+      <g transform="translate(-155, 0)">
+        <!-- Cab & Body -->
+        <path d="M10,40 L30,5 L65,5 L70,40 Z" fill="#141312" stroke="#f2d82b" stroke-width="2"/>
+        <!-- Boom Arm (Gold) -->
+        <path d="M15,25 L55,10 L95,35 L90,42 L55,20 L20,30 Z" fill="url(#goldGrad4)"/>
+        <!-- Bucket -->
+        <path d="M90,30 L115,22 L110,50 L85,45 Z" fill="#f2d82b"/>
+        <!-- Track Base -->
+        <path d="M10,52 L75,52 Q85,52 80,42 L70,30 Q65,26 50,28 L25,28 Q15,26 10,32 L5,42 Q0,52 10,52 Z" fill="#141312" stroke="#5a5956" stroke-width="1.5"/>
+        <circle cx="15" cy="42" r="7" fill="#3a3937" stroke="#f2d82b" stroke-width="1"/>
+        <circle cx="70" cy="42" r="7" fill="#3a3937" stroke="#f2d82b" stroke-width="1"/>
+      </g>
+    </g>
+
+    <!-- CENTER HEAVY BRANDING BANNER (Crosses through the Hexagon) -->
+    <g transform="translate(0, 10)">
+      <!-- Main Black Plaque with Yellow Edge -->
+      <rect x="-240" y="-45" width="480" height="90" rx="6" fill="#141312" stroke="url(#goldGrad4)" stroke-width="3" filter="url(#shadow4)"/>
+      <rect x="-232" y="-38" width="464" height="76" rx="4" fill="none" stroke="#3d3c39" stroke-width="1.5"/>
+
+      <!-- Company Name Text -->
+      <text y="-8" fill="url(#goldGrad4)" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="44" font-weight="900" letter-spacing="4">
+        TAYLOR'S
+      </text>
+      <text y="28" fill="#ffffff" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="34" font-weight="900" letter-spacing="4">
+        EARTH WORKS
+      </text>
+    </g>
+
+    <!-- Services Ribbon Just Below Center -->
+    <g transform="translate(0, 92)">
+      <text y="0" fill="#f2d82b" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="900" letter-spacing="2.5">
+        CLEARING  /  GRADING  /  EXCAVATING  /  FOOTINGS
+      </text>
+    </g>
+
+    <!-- LOWER HEX FACET SCRIPTURE PLATE (Concept 4, Prompt 1) -->
+    <g transform="translate(0, 145)">
+      <!-- Recessed Steel Plate in lower hex quadrant -->
+      <rect x="-180" y="0" width="360" height="54" rx="6" fill="url(#steelHex4)" stroke="#f2d82b" stroke-width="2"/>
+      <circle cx="-160" cy="27" r="3.5" fill="#f2d82b"/>
+      <circle cx="160" cy="27" r="3.5" fill="#f2d82b"/>
+
+      <!-- Scripture Text -->
+      <text y="35" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" letter-spacing="3">
+        John 14:6  <tspan fill="#f2d82b">•</tspan>  John 3:16
+      </text>
+    </g>
+
+    <!-- Bottom City & Cell Phone Details -->
+    <g transform="translate(0, 235)">
+      <text y="0" fill="#f2d82b" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="900" letter-spacing="2">
+        ZEBULON, NC  |  (984) 318-5575
+      </text>
+    </g>
+  </g>
+</svg>

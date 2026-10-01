@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 506" width="900" height="506">
+  <defs>
+    <linearGradient id="skyGradAfter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="gravelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="grassGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+    <pattern id="gravelTexture" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1.5" fill="#334155" opacity="0.3"/>
+      <circle cx="15" cy="15" r="2" fill="#cbd5e1" opacity="0.4"/>
+      <circle cx="12" cy="6" r="1.2" fill="#1e293b" opacity="0.2"/>
+      <circle cx="3" cy="16" r="1.5" fill="#f8fafc" opacity="0.25"/>
+    </pattern>
+  </defs>
+  <!-- Background / Sunny Sky -->
+  <rect width="900" height="506" fill="url(#skyGradAfter)"/>
+
+  <!-- Clean Background Treeline -->
+  <path d="M0,260 Q120,230 250,260 T500,240 T750,260 T900,230 L900,506 L0,506 Z" fill="#1e293b" opacity="0.35"/>
+  <path d="M0,280 Q160,250 320,280 T640,260 T900,280 L900,506 L0,506 Z" fill="#166534" opacity="0.7"/>
+
+  <!-- Clean Graded Shoulders / Lawn -->
+  <rect x="0" y="320" width="900" height="186" fill="url(#grassGrad)"/>
+
+  <!-- Precision Graded & Crowned Driveway -->
+  <!-- Perspective Roadway converging into distance -->
+  <path d="M360,300 L540,300 L760,506 L140,506 Z" fill="url(#gravelGrad)"/>
+  <!-- Texture overlay -->
+  <path d="M360,300 L540,300 L760,506 L140,506 Z" fill="url(#gravelTexture)"/>
+
+  <!-- Clean Precision Edge Lines -->
+  <line x1="360" y1="300" x2="140" y2="506" stroke="#f59e0b" stroke-width="3" stroke-dasharray="8 8" opacity="0.7"/>
+  <line x1="540" y1="300" x2="760" y2="506" stroke="#f59e0b" stroke-width="3" stroke-dasharray="8 8" opacity="0.7"/>
+
+  <!-- Subtle Roller / Compactor Tread Pattern -->
+  <path d="M220,450 L680,450" stroke="#334155" stroke-width="1.5" opacity="0.35"/>
+  <path d="M260,420 L640,420" stroke="#334155" stroke-width="1.5" opacity="0.35"/>
+  <path d="M300,390 L600,390" stroke="#334155" stroke-width="1.5" opacity="0.35"/>
+  <path d="M330,360 L570,360" stroke="#334155" stroke-width="1.5" opacity="0.35"/>
+  <path d="M350,330 L550,330" stroke="#334155" stroke-width="1.5" opacity="0.35"/>
+
+  <!-- Watermark / Label text in image for preview -->
+  <rect x="650" y="30" width="220" height="44" rx="6" fill="rgba(15,23,42,0.85)"/>
+  <text x="668" y="58" fill="#10b981" font-family="system-ui, sans-serif" font-size="18" font-weight="900" letter-spacing="1">AFTER: GRADED &amp; PREPPED</text>
+  <text x="560" y="485" fill="#0f172a" font-family="system-ui, sans-serif" font-size="14" font-weight="700">Laser Leveled, Compacted Base &amp; Drainage Crown</text>
+</svg>

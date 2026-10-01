@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 640" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f1e1c"/>
+      <stop offset="100%" stop-color="#11100f"/>
+    </linearGradient>
+    <linearGradient id="goldGrad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5e158"/>
+      <stop offset="50%" stop-color="#f2d82b"/>
+      <stop offset="100%" stop-color="#dfc418"/>
+    </linearGradient>
+    <linearGradient id="stoneGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a4946"/>
+      <stop offset="30%" stop-color="#383734"/>
+      <stop offset="100%" stop-color="#242321"/>
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Canvas Container -->
+  <rect width="800" height="640" rx="16" fill="url(#bgGrad3)"/>
+  <rect x="15" y="15" width="770" height="610" rx="12" fill="none" stroke="#2c2b28" stroke-width="2"/>
+  <rect x="22" y="22" width="756" height="596" rx="8" fill="none" stroke="#f2d82b" stroke-width="1" stroke-opacity="0.2"/>
+
+  <!-- Top Ribbon: Location & Craft -->
+  <g transform="translate(400, 52)" text-anchor="middle">
+    <text y="0" fill="#9c9b98" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="4">
+      ZEBULON, NC  •  PRECISION SITE WORK &amp; FOOTINGS
+    </text>
+  </g>
+
+  <!-- MONOGRAM "TEW" ARTWORK GROUP -->
+  <g transform="translate(400, 90)" text-anchor="middle">
+    
+    <!-- Outer Decorative Machinery Frame -->
+    <g filter="url(#shadow3)">
+      <!-- Geometric Monogram Letters "T E W" Interlocked -->
+      <!-- Letter 'T' (Left/Center Anchor) -->
+      <path d="M-220,10 L-70,10 L-70,45 L-125,45 L-125,175 L-165,175 L-165,45 L-220,45 Z" fill="url(#goldGrad3)"/>
+      
+      <!-- Letter 'E' (Center Overlap) -->
+      <path d="M-60,10 L70,10 L70,45 L-20,45 L-20,75 L50,75 L50,108 L-20,108 L-20,140 L70,140 L70,175 L-60,175 Z" fill="#ffffff"/>
+      
+      <!-- Letter 'W' (Right Anchor with Chiseled Angles) -->
+      <path d="M80,10 L120,10 L145,120 L175,30 L205,30 L235,120 L260,10 L300,10 L260,175 L220,175 L190,75 L160,175 L120,175 Z" fill="url(#goldGrad3)"/>
+    </g>
+
+    <!-- HORIZONTAL LASER LEVEL GRADE LINE (Cuts through the Monogram) -->
+    <g transform="translate(0, 92)">
+      <!-- Glowing Red/Yellow Laser Beam -->
+      <line x1="-270" y1="0" x2="270" y2="0" stroke="#f2d82b" stroke-width="4"/>
+      <line x1="-270" y1="0" x2="270" y2="0" stroke="#ffffff" stroke-width="1.5"/>
+
+      <!-- Center Laser Target Reticle / Elevation Crosshairs -->
+      <circle cx="0" cy="0" r="16" fill="none" stroke="#f2d82b" stroke-width="2"/>
+      <circle cx="0" cy="0" r="5" fill="#f2d82b"/>
+      <line x1="0" y1="-22" x2="0" y2="-12" stroke="#f2d82b" stroke-width="2"/>
+      <line x1="0" y1="12" x2="0" y2="22" stroke="#f2d82b" stroke-width="2"/>
+      <line x1="-22" y1="0" x2="-12" y2="0" stroke="#f2d82b" stroke-width="2"/>
+      <line x1="12" y1="0" x2="22" y2="0" stroke="#f2d82b" stroke-width="2"/>
+    </g>
+
+    <!-- SOLID STONE FOUNDATION PLINTH (Concept 3, Prompt 1) -->
+    <g transform="translate(0, 205)">
+      <!-- 3D Stone Cap -->
+      <polygon points="-280,0 280,0 260,-12 -260,-12" fill="#5a5956"/>
+      
+      <!-- Main Foundation Stone Block Face -->
+      <rect x="-280" y="0" width="560" height="70" rx="4" fill="url(#stoneGrad3)" stroke="#f2d82b" stroke-width="2" filter="url(#shadow3)"/>
+      
+      <!-- Subtle Chiseled Foundation Bevel -->
+      <line x1="-276" y1="6" x2="276" y2="6" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"/>
+
+      <!-- Foundation Inscription: "THE SOLID FOUNDATION • JOHN 14:6 • JOHN 3:16" -->
+      <text y="32" fill="#f2d82b" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="900" letter-spacing="4">
+        THE SOLID FOUNDATION
+      </text>
+      <text y="54" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" letter-spacing="3">
+        John 14:6  <tspan fill="#f2d82b">•</tspan>  John 3:16
+      </text>
+    </g>
+  </g>
+
+  <!-- COMPANY BRAND NAME -->
+  <g transform="translate(400, 420)" text-anchor="middle">
+    <text y="0" fill="url(#goldGrad3)" font-family="system-ui, -apple-system, 'Impact', sans-serif" font-size="48" font-weight="900" letter-spacing="4">
+      TAYLOR'S EARTH WORKS
+    </text>
+    <text y="36" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="800" letter-spacing="3">
+      CLEARING  •  GRADING  •  EXCAVATING  •  FOOTINGS
+    </text>
+  </g>
+
+  <!-- Lower Contact & Owner Stamp -->
+  <g transform="translate(400, 520)" text-anchor="middle">
+    <!-- Divider Line with Diamond Center -->
+    <line x1="-240" y1="0" x2="-20" y2="0" stroke="#3a3936" stroke-width="1.5"/>
+    <polygon points="0,-6 6,0 0,6 -6,0" fill="#f2d82b"/>
+    <line x1="20" y1="0" x2="240" y2="0" stroke="#3a3936" stroke-width="1.5"/>
+
+    <text y="32" fill="#f2d82b" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="900" letter-spacing="2">
+      CELL: (984) 318-5575
+    </text>
+    <text y="58" fill="#9c9b98" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+      TAYLOR McDANIEL  |  ZEBULON, NC  |  FREE ESTIMATES
+    </text>
+  </g>
+</svg>
