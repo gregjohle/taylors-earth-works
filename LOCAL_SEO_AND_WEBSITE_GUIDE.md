@@ -16,7 +16,8 @@ A complete guide to hosting, customizing, and scaling Taylor's Earth Works for *
    - [Phase 3: Geotagged "Proof of Work" Photos](#phase-3-geotagged-proof-of-work-photos)
    - [Phase 4: Top 10 Free Directory Citations (NAP Consistency)](#phase-4-top-10-free-directory-citations-nap-consistency)
    - [Phase 5: Hyper-Local Facebook Lead Generation](#phase-5-hyper-local-facebook-lead-generation)
-7. [The 30-Day Launch Checklist](#7-the-30-day-launch-checklist)
+7. [Managing Leads & Estimates with Streak CRM (Free)](#7-managing-leads--estimates-with-streak-crm-free)
+8. [The 30-Day Launch Checklist](#8-the-30-day-launch-checklist)
 
 ---
 
@@ -229,7 +230,31 @@ Homeowners regularly turn to local Facebook groups to find earthmoving and equip
 
 ---
 
-## 7. The 30-Day Launch Checklist
+## 7. Managing Leads & Estimates with Streak CRM (Free)
+
+As an owner-operator in the field, Taylor needs a low-friction way to track incoming estimate requests, schedule site visits, and remember to follow up without using complex software.
+
+**Streak CRM** is the perfect solution because it lives entirely inside his existing Gmail inbox (`taylorsearthworks@gmail.com`) and is 100% free for solo users.
+
+### How to Set It Up:
+1. **Install the Extension:** Go to [streak.com](https://www.streak.com/) on a desktop computer and click "Add to Chrome".
+2. **Create a Sales Pipeline:** Inside Gmail, Streak will prompt you to create a pipeline. Choose the "Sales" or "CRM" template.
+3. **Customize the Stages:** Rename the stages to match a contractor's workflow:
+   - *New Lead*
+   - *Site Visit Scheduled*
+   - *Estimate Sent*
+   - *Job Won / Scheduled*
+   - *Job Completed / Paid*
+   - *Lost*
+
+### The Daily Workflow:
+- **Incoming Leads:** When an estimate request comes in from the website form, he clicks the "Streak" button right inside the email to add it to his pipeline as a *New Lead*.
+- **Follow-Up Reminders (Snooze):** If he sends an estimate and wants to follow up in 3 days, he clicks the "Snooze" button in Gmail. The email will disappear and magically pop back to the top of his inbox 3 days later to remind him to call them.
+- **Track Estimate Opens:** Streak automatically tracks when a customer opens an email, so he knows exactly when they are looking at his estimate!
+
+---
+
+## 8. The 30-Day Launch Checklist
 
 - [ ] **Day 1:** Purchase domain name (`~$10–$12/yr`) via Cloudflare Registrar or Namecheap.
 - [ ] **Day 2:** Deploy the website folder to **Cloudflare Pages** (100% free) and connect the custom domain.
