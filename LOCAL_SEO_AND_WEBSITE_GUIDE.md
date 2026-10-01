@@ -178,6 +178,13 @@ Google's algorithm scans review text for keywords. When a homeowner writes *"Tay
 Always reply within 48 hours and include relevant keywords:
 > *"Thanks [Customer Name]! We loved grading the driveway and prepping the gravel base for your new garage in [Town Name]. Enjoy the new build, and don't hesitate to reach out if you need any future dirt work!"*
 
+#### 5. How to Get the First 5 Reviews (The "Bootstrap" Strategy)
+Getting the first 5 reviews is critical for Google to start showing the business to strangers. Since he is just launching the official profile, here is how to get those first 5 reviews immediately:
+* **Mine Past "Hidden" Jobs:** Have him scroll through his phone contacts and text anyone he has done work for in the last year (even side jobs or favors). 
+  > *"Hey [Name], I’m making my earthworks business official and setting up my Google page! Since I helped you out with that [grading/driveway] project a while back, would you mind taking 30 seconds to drop a quick review of my work? It would mean the world to me: [Link]"*
+* **Vendor & Contractor References:** Ask professionals he works with (e.g., the local quarry, equipment rental shop, or a concrete contractor who pours over his prepped pads) to leave a review vouching for his professionalism, punctuality, and quality of prep work.
+* **Harvest Existing Facebook Comments:** If he has previous comments on his personal Facebook like *"Taylor did an amazing job on our yard!"*, ask those people to copy/paste that exact sentiment onto the new Google Profile.
+
 ---
 
 ### Phase 3: Geotagged "Proof of Work" Photos
