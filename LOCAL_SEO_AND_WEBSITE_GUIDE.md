@@ -106,17 +106,27 @@ The form uses **FormSubmit.co**, a free service built for static websites that r
 
 ---
 
-## 5. Before & After Photos (Already Configured)
+## 5. Before & After Photos & Live Facebook Gallery
 
-The site is already running with his real project photos:
+### The Interactive Hero Slider
+The site features a primary interactive slider showing a real project:
 - `images/Before.jpg`: Rough, uneven clay subgrade inside garage stem walls.
-- `images/After.jpg`: Laser-leveled, machine-compacted stone base with heavy-duty vapor barrier installed.
+- `images/After.jpg`: Laser-leveled, machine-compacted stone base with heavy-duty vapor barrier.
 
-Both images are 2048x1536 (4:3 aspect ratio). The interactive slider has been configured with `aspect-ratio: 4 / 3;` so the transformation is displayed without any cropping.
+Both images are 2048x1536 (4:3 aspect ratio). The interactive slider has been configured with `aspect-ratio: 4 / 3;` so the transformation is displayed without cropping.
 
-To add new photos in the future:
-1. Place the new images into `images/`.
-2. Update the `src=""` attributes in `index.html` under the `<div class="ba-container">` section.
+### The Live Facebook Gallery (Elfsight Setup)
+Instead of manually updating website code every time Taylor finishes a job, the site uses an automated social media sync. Whenever Taylor posts new photos to his Facebook Business Page, they will automatically appear in the gallery section of the website.
+
+**To activate this feature:**
+1. Go to [Elfsight.com](https://elfsight.com/) and create a free account.
+2. Select the **Facebook Feed** widget from their catalog.
+3. Choose the **"Full Width"** template. This layout expands to fill the container and looks like a modern photo gallery. It is 100% mobile responsive and will automatically stack the photos neatly on phone screens.
+4. Connect the widget to Taylor's Earth Works Facebook Page URL.
+5. *(Optional but recommended)*: In the widget settings, toggle off the "Facebook Page Header" (the cover photo and logo) so it blends perfectly into the website as a seamless photo gallery.
+6. Click **Publish** to generate your unique widget ID (it will look like `12345678-abcd-efgh-ijkl-1234567890ab`).
+7. Open `index.html` (around line 457) and replace `YOUR-WIDGET-ID-HERE` with your actual ID.
+8. Push the changes to GitHub to instantly update the live site.
 
 ---
 
